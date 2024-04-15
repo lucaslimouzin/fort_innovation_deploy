@@ -16,7 +16,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./webgl/
         server-dir: /public_html/fortInnov/
-        exclude:
-          -**/.git**
-          -TemplateData/**
-          -index.html
+        exclude: |
+          **/.git**
+          TemplateData/**
+          index.html
