@@ -13,7 +13,7 @@ jobs:
       with:
         server: nodels9-eu.n0c.com
         username: givros@givrosgaming.fr
-        password: ${{ secrets.password }}
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./webgl/
         remote-dir: /public_html/fortInnov/
         exclude: |
