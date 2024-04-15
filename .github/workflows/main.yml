@@ -17,7 +17,6 @@ jobs:
         local-dir: ./webgl/
         server-dir: /public_html/fortInnov/
         exclude:
-          - **/.git*
-          - **/.git/**
-          - TemplateData/**
-          - index.html
+          -**/.git**
+          -TemplateData/**
+          -index.html
