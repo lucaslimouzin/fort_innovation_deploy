@@ -11,13 +11,13 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: nodels9-eu.n0c.com
+        server: nodejs9-eu.n0c.com
         username: givros@givrosgaming.fr
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./webgl/
-        remote-dir: /public_html/fortInnov/
-        exclude: |
-          **/.git*
-          **/.git*/**
+        server-dir: /public_html/fortInnov/
+        exclude:
+          - **/.git*
+          - **/.git/**
           - TemplateData/**
           - index.html
